@@ -4,6 +4,7 @@ Intranet P2P direct connection tool based on UDP hole punching
 ## 项目介绍
 基于 UDP 打洞和时间同步实现的内网设备直连工具。  
 **该工具暂时仅对中国大陆地区用户开放，仅支持国内 IP 连接。**  
+项目网址：https://github.com/hnxinyu2005/DirectLink  
 - 无服务器、无中转（需要用户通过其他途径交换初始信息）
 - 主要为学习用途，尽可能支持游戏联机
 
@@ -37,8 +38,11 @@ Intranet P2P direct connection tool based on UDP hole punching
 - GitHub: [hnxinyu2005](https://github.com/hnxinyu2005)
 
 ## TODO
-两台内网电脑通讯 udp逻辑已写好
-1. 增加 main 函数 运行前明确发送/接收端
-2. b端（内网计算机）拉取代码，内网 a -> b
+验证使用程序在内网两台计算机通信可行性，步骤：
+1. A、B 端分别存有或拉取项目代码
+2. B 端cmd：`ipconfig` -> 找 IPv4 地址
+3. B 端进入项目文件夹，运行`python main.py receive`
+4. A 端进入项目文件夹，运行`python main.py send <B端IP> "Hello DirectLink!"`
+5. 检查 B 端是否显示
 
 README 最后一次更新： 2026-02-12

@@ -1,4 +1,5 @@
 # main.py
+from logging import exception
 
 project_name = "DirectLink"
 project_description = "Intranet P2P direct connection tool based on UDP hole punching"
@@ -16,6 +17,15 @@ def main():
     print()
     print("Warning: " + project_warning)
     print()
+
+    print("[Main] 初始化")
+
+    try:
+        from core.udp import create_udp_socket
+        udp_socket = create_udp_socket()
+        print("[Main] UDP 服务已启动")
+    except Exception as error:
+        print(f"[Error] UDP 服务启动失败：{error}")
 
 if __name__ == "__main__":
     main()

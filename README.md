@@ -37,5 +37,8 @@ Intranet P2P direct connection tool based on UDP hole punching
 - GitHub: [hnxinyu2005](https://github.com/hnxinyu2005)
 
 ## TODO
+两台内网电脑通讯 udp逻辑已写好
+1. 增加 main 函数 运行前明确发送/接收端
+2. b端（内网计算机）拉取代码，内网 a -> b
 
 README 最后一次更新： 2026-02-12

@@ -45,16 +45,16 @@ Only the **sending and receiving of simple strings** is implemented at this stag
 4. On Device A, enter the following command in cmd to send a message:
 
     ```cmd
-    python main.py send <Device B's IPv4 address> "<message content>"
+    python main.py send <B_IPv4> "<message_content>"
     ```
    
+    Note: Replace <B_IPv4> with Device B's intranet IPv4 address (e.g., 192.168.1.186), and replace <message_content> with the text you want to send (enclose the message in double quotes if it contains spaces).  
     Example:
 
     ```cmd
     python main.py send 192.168.1.186 "Hello, DirectLink!"
     ```
-   
-    This command is used to send the string: "Hello, DirectLink!" to 192.168.1.186.
+    This example command sends the string: "Hello, DirectLink!" to 192.168.1.186.
 
 5. The received message will be visible in the cmd window on Device B.
 

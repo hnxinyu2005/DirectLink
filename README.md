@@ -44,16 +44,17 @@
 4. A 端在 cmd 输入以下命令发送信息：
 
     ```cmd
-    python main.py send <B 端 IPv4 地址> "<消息内容>"
+    python main.py send <B_IPv4> "<message_content>"
     ```
-
+   
+    说明：<B_IPv4> 替换为 B 端的内网 IPv4 地址（如 192.168.1.186），<message_content> 替换为要发送的消息内容（消息含空格时需用双引号包裹）。  
     示例：
 
     ```cmd
     python main.py send 192.168.1.186 "Hello, DirectLink!"
     ```
    
-   该命令用于向 192.168.1.186 发送字符串：“Hello, DirectLink!”
+    该命令示例表示向 192.168.1.186 发送字符串：“Hello, DirectLink!”
 
 5. 在 B 端 cmd 窗口上能看到接收到的信息。
 
